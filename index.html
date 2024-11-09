@@ -27,7 +27,22 @@
 
         <h1>Welcome to truffled</h1>
         <p>Games with your Desire!</p>
-        <input type="text" placeholder="Search..." class="search-bar">
+
+        <form id="uv-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/>
+            <input id="uv-address" type="text" placeholder="Search..." class="search-bar">
+        </form>
+
+        <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+          </div>
+
     </div>
+<script src="/static/uv/uv.bundle.js" defer></script>
+<script src="/static/uv/uv.config.js" defer></script>
+<script src="/static/register-sw.js" defer></script>
+<script src="/static/search.js" defer></script>
+<script src="/static/index.js" defer></script>
 </body>
 </html>
