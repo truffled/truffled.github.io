@@ -43,5 +43,22 @@
 <script src="/static/register-sw.js" defer></script>
 <script src="/static/search.js" defer></script>
 <script src="/static/index.js" defer></script>
+<script>
+        function openIframe() {
+
+            const newWindow = window.open('about:blank');
+
+ 
+            const iframe = newWindow.document.createElement('iframe');
+            iframe.src = '/'; 
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.border = 'none';
+
+
+            newWindow.document.body.appendChild(iframe);
+        }
+    </script>
+            <button class="sigma" onclick="openIframe()">About:Blank</button>
 </body>
 </html>
