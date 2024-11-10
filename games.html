@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" type="image/png" href="png/logo.png"/>
+    <link rel="icon" type="image/png" href="png/logo.png"/>
     <title>Truffled - Games</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -15,10 +15,10 @@
             <span class="logo-text">Truffled</span>
         </div>
         <div class="navbar-right">
-            <a href="index.html"><img src="png/house-solid.svg"></a>
-            <a href="games.html"><img src="png/gamepad-solid.svg"></a>
-            <a href="apps.html"><img src="png/apps.svg"></a>
-            <a href="settings.html"><img src="png/gear-solid.svg"></a>
+            <a href="index.html"><img src="png/house-solid.svg" alt="Home"></a>
+            <a href="games.html"><img src="png/gamepad-solid.svg" alt="Games"></a>
+            <a href="apps.html"><img src="png/apps.svg" alt="Apps"></a>
+            <a href="settings.html"><img src="png/gear-solid.svg" alt="Settings"></a>
         </div>
     </div>
 
@@ -30,14 +30,33 @@
         <div class="container">
             <div class="game-gallery" id="gameGallery">
                 <div class="game" data-name="Game 1">
-                    <img src="/png/1.jpg" alt="1" class="game-thumbnail">
+                    <a href="javascript:void(0);" onclick="playGame('1')" class="game-link"></a>
+                    <img src="png/1.jpg" alt="1" class="game-thumbnail">
                     <h3>1</h3>
-                    <button onclick="playGame('1')">Play Game</button>
                 </div>
-                <div class="game" data-name="Game Title 2">
-                    <img src="path/to/your-image2.jpg" alt="Game 2" class="game-thumbnail">
-                    <h3>Game Title 2</h3>
-                    <button onclick="playGame('Game Title 2')">Play Game</button>
+                <div class="game" data-name="gameGallery">
+                    <a href="javascript:void(0);" onclick="playGame('1v1')" class="game-link"></a>
+                    <img src="png/1v1.jpg" alt="1v1" class="game-thumbnail">
+                    <h3>1v1.lol</h3>
+                </div>
+                <div class="game" data-name="gameGallery">
+                    <a href="javascript:void(0);" onclick="playGame('2048')" class="game-link"></a>
+                    <img src="png/2048.jpg" alt="2048" class="game-thumbnail">
+                    <h3>2048</h3>
+                </div>
+                <div class="game" data-name="gameGallery">
+                    <a href="javascript:void(0);" onclick="playGame('OvO')" class="game-link"></a>
+                    <img src="png/OvO.jpg" alt="OvO" class="game-thumbnail">
+                    <h3>OvO</h3>
+                </div>
+                <div class="game" data-name="gameGallery">
+                    <a href="javascript:void(0);" onclick="playGame('Slope')" class="game-link"></a>
+                    <img src="png/Slope.jpg" alt="Slope" class="game-thumbnail">
+                    <h3>Slope</h3>
+                <div class="game" data-name="gameGallery">
+                    <a href="javascript:void(0);" onclick="playGame('Retro-Bowl')" class="game-link"></a>
+                    <img src="png/Retro-Bowl.jpg" alt="Retro Bowl" class="game-thumbnail">
+                    <h3>Retro Bowl</h3>
                 </div>
             </div>
         </div>
