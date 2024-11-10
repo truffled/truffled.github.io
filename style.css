@@ -147,40 +147,33 @@ header p {
 .game {
     position: relative;
     background-color: #222;
-    border-radius: 8px;
+    border-radius: 12px; 
     padding: 15px;
-    width: 200px;
-    height: 250px;
+    width: 250px; 
+    height: 300px;
     text-align: center;
-    transition: transform 0.3s;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
-    background-color: #333; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    overflow: hidden;
+}
 
 .game:hover {
     transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .game-thumbnail {
     width: 100%;
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 12px; 
+    margin-bottom: 15px;
 }
 
 .game h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #e0e0e0;
-    margin-top: 10px; 
-}
-
-.game-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 8px;
-    z-index: 1;
-    background: transparent;
+    margin-top: 10px;
+    font-weight: 600; 
 }
