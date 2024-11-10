@@ -145,10 +145,12 @@ header p {
 }
 
 .game {
+    position: relative;
     background-color: #222;
     border-radius: 8px;
     padding: 15px;
     width: 200px;
+    text-align: center;
     transition: transform 0.3s;
 }
 
@@ -165,6 +167,22 @@ header p {
 .game h3 {
     font-size: 1.1rem;
     color: #e0e0e0;
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.game-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    z-index: 1;
+    background: transparent;
+}
+px;
 }
 
 .game button {
