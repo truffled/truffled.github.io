@@ -50,7 +50,7 @@ body {
 }
 
 .navbar-right a {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 .navbar-right img {
@@ -212,4 +212,22 @@ header p {
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 1px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button-link button {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-link button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
 }
