@@ -120,6 +120,26 @@ button:hover {
     transform: scale(1.05);
 }
 
+sigma {
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #555555;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+sigma:hover {
+    background-color: #7289DA;
+    border-color: #4b5fa6;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
