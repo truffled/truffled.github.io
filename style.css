@@ -6,51 +6,61 @@
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: #000000;
-    color: #ffffff;
     overflow-x: hidden;
 }
 
 body.dark-mode {
-    background-color: #000000;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.navbar.dark-navbar {
+    background-color: #333;
+}
+
+button.dark-button {
+    background-color: #555;
+    color: #fff;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navbar.light-navbar {
+    background-color: #f1f1f1;
+}
+
+button.light-button {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+body.blue-mode {
+    background-color: #001f3d;
     color: #ffffff;
+}
+
+.navbar.blue-navbar {
+    background-color: #003366;
+}
+
+button.blue-button {
+    background-color: #005f99;
+    color: #fff;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1a1a1a;
     padding: 15px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-body.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-.navbar.light-mode {
-    background-color: #f1f1f1;
-}
-
-button {
-    background-color: #333;
-    color: #ffffff;
-}
-
-button.light-mode {
-    background-color: #f1f1f1;
-    color: #000000;
-}
-
-button.light-mode:hover {
-    background-color: #007BFF;
-    transform: scale(1.05);
 }
 
 .navbar-left {
@@ -106,49 +116,26 @@ h1 {
     margin-bottom: 20px;
 }
 
-body.light-mode .content {
-    color: #000000;
-}
-
-.search-bar {
-    padding: 8px 15px;
-    width: 300px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-    transition: width 0.3s ease, background-color 0.3s ease;
-}
-
-.search-bar:hover {
-    width: 320px;
-    background-color: #444444;
-}
-
-p {
-    font-size: 1.2rem;
-    color: #b3b3b3;
-    margin-top: 15px;
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 button {
-    background-color: #333333;
-    color: #ffffff;
-    border: 2px solid #555555;
+    background-color: #333;
+    color: #fff;
     padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
     background-color: #007BFF;
-    border-color: #0056b3;
-    color: #ffffff;
     transform: scale(1.05);
 }
 
