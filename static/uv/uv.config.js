@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/static/uv/',
+    prefix: '/static/uv/service/',
     bare:'https://bare.ubg.icu/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
