@@ -6,55 +6,16 @@
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    overflow-x: hidden;
-}
-
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-}
-
-.navbar.dark-navbar {
-    background-color: #333;
-}
-
-button.dark-button {
-    background-color: #555;
-    color: #fff;
-}
-
-body.light-mode {
-    background-color: #ffffff;
-    color: #333;
-}
-
-.navbar.light-navbar {
-    background-color: #f1f1f1;
-}
-
-button.light-button {
-    background-color: #007BFF;
-    color: #fff;
-}
-
-body.blue-mode {
-    background-color: #001f3d;
+    background-color: #000000;
     color: #ffffff;
-}
-
-.navbar.blue-navbar {
-    background-color: #003366;
-}
-
-button.blue-button {
-    background-color: #005f99;
-    color: #fff;
+    overflow-x: hidden;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #1a1a1a;
     padding: 15px 20px;
     position: fixed;
     width: 100%;
@@ -195,6 +156,7 @@ header p {
     font-size: 1.2rem;
     color: #e0e0e0;
     margin-top: 10px;
+    font-weight: 600;
 }
 
 .app {
@@ -230,6 +192,11 @@ header p {
     margin-top: 10px;
     font-weight: 600;
     text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.button a {
+    text-decoration: none;
 }
 
 .button-link button {
