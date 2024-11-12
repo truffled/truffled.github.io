@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/uv/service/',
-    bare:'hhttps://getto.masplenedigitalworld.com/bare/',
+    bare: 'https://getto.masplenedigitalworld.com/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
@@ -8,3 +8,4 @@ self.__uv$config = {
     config: '/static/uv/uv.config.js',
     sw: '/static/uv/uv.sw.js',
 };
+// https://freediddyandrkelly.home.kg/bare/
