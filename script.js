@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (savedTheme) {
         setTheme(savedTheme);
     } else {
-        setTheme("light-mode");
+        setTheme("dark-mode");
     }
 
     darkModeButton.addEventListener("click", () => setTheme("dark-mode"));
