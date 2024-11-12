@@ -1,21 +1,33 @@
-function filterGames() {
-    const searchInput = document.getElementById("gameSearch").value.toLowerCase();
-    const games = document.querySelectorAll(".game");
-
-    games.forEach(game => {
-        const gameName = game.getAttribute("data-name").toLowerCase();
-        if (gameName.includes(searchInput)) {
-            game.style.display = "block";
-        } else {
-            game.style.display = "none";
-        }
+function enableDarkMode() {
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode');
+    document.querySelector('.navbar').classList.remove('light-mode');
+    document.querySelector('.navbar').classList.add('dark-mode');
+    document.querySelectorAll('button').forEach(button => {
+        button.classList.remove('light-mode');
+        button.classList.add('dark-mode');
     });
+    localStorage.setItem('theme', 'dark');
 }
 
-function playGame(gameName) {
-    alert("Starting " + gameName + "...");
+function enableLightMode() {
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
+    document.querySelector('.navbar').classList.remove('dark-mode');
+    document.querySelector('.navbar').classList.add('light-mode');
+    document.querySelectorAll('button').forEach(button => {
+        button.classList.remove('dark-mode');
+        button.classList.add('light-mode');
+    });
+    localStorage.setItem('theme', 'light');
 }
 
-function details(gameName) {
-    alert("Showing details for " + gameName + "...");
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    enableDarkMode();
+} else if (savedTheme === 'light') {
+    enableLightMode();
 }
+
+document.getElementById('dark-mode-btn').addEventListener('click', enableDarkMode);
+document.getElementById('light-mode-btn').addEventListener('click', enableLightMode);
