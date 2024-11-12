@@ -195,7 +195,6 @@ header p {
     font-size: 1.2rem;
     color: #e0e0e0;
     margin-top: 10px;
-    font-weight: 600;
 }
 
 .app {
@@ -231,11 +230,6 @@ header p {
     margin-top: 10px;
     font-weight: 600;
     text-transform: capitalize;
-    letter-spacing: 1px;
-}
-
-.button a {
-    text-decoration: none;
 }
 
 .button-link button {
