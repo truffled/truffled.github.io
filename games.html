@@ -9,12 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-container">
-            <div class="ball" id="ball1"></div>
-            <div class="ball" id="ball2"></div>
-            <div class="ball" id="ball3"></div>
+    <div id="loading-screen">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
+        <h5 id="fetching-text">Loading...</h5>
+    </div>
         <p class="loading-text">Loading...</p>
     </div>
     <div class="navbar">
@@ -253,29 +255,37 @@
                         <img src="png/games/ctr.png" alt="ctr" class="game-thumbnail">
                     </a>
                     <h3>Cut The Rope</h3>
-                </div>                    
+                </div>
+                <div class="game" data-name="gameGallery">
+                    <a href="games/subway-surfers/" class="game-link">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfyjATFe7Qg15j5x1YktUbABxgr6BlbKXKECbj6KH2QzbgKqzw" alt="sub" class="game-thumbnail">
+                    </a>
+                    <h3>Subway Surfers</h3>
+                </div>
+                <div class="game" data-name="gameGallery">
+                    <a href="games/pvz/" class="game-link">
+                        <img src="https://badatiapk.com/uploads/2024/9/pvz-fusion-apk-1.png" alt="pvz" class="game-thumbnail">
+                    </a>
+                    <h3>PvZ</h3>
+                </div>
+                <div class="game" data-name="gameGallery">
+                    <a href="/static/uv/service/hvtrs8%2F-arp%2F370382.eaoeq.q3%2Cycnfez.lev%2F1521%3A0-oqpisvu60c8pttgaah1h61pukvlnxpg3%2Fknfez.jtol%3Dcnif%3D6466197%26cmr%3Bi52if%3D'7A%26cmr%3Beaf_qowrae%3F1%24aop9sfk%3F%250Fqdi%250F%5D%250Ft2%2C6195cf82c4dg64c2347f.hs!opieil%3Djtvpq%251A'2D%250Frlcyjor.aoo%26cmr%3Bcpr-kd%3F370382%26cmr%3Bfetiae%2Ft%7Bpg%3Dfeqkvor" class="game-link">
+                        <img src="https://play-lh.googleusercontent.com/45HfPjWkdT8k1Y-1kb2ce9dtU4cIq4PXZGPSOQDBHRO_sBWG7Fu9mKKsk9WylHW1Lg=w240-h480-rw" alt="t&b" class="game-thumbnail">
+                    </a>
+                    <h3>Thorns & Balloons</h3>
+                </div>                     
             </div>
         </div>
     </div>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
 <script>
-          window.addEventListener("load", function() {
-            setTimeout(function() {
-                const loadingScreen = document.getElementById("loadingScreen");
-                loadingScreen.style.opacity = 0;
-                setTimeout(function() {
-                    loadingScreen.style.display = "none";
-                }, 1000); 
-            }, 2000); 
-        });
-
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-WLTG1S4STB');
 </script>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<script src="/js/loading.js"></script>
 </body>
 </html>

@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-container">
-            <div class="ball" id="ball1"></div>
-            <div class="ball" id="ball2"></div>
-            <div class="ball" id="ball3"></div>
+    <div id="loading-screen">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
-        <p class="loading-text">Loading...</p>
+        <h5 id="fetching-text">Loading...</h5>
     </div>
     <div class="navbar">
         <div class="navbar-left">
@@ -37,25 +37,14 @@
 
         <button class="sigma" onclick="window.location.href='partners.html'">Partners</button>
     </div>
-
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
     <script>
-        window.addEventListener("load", function() {
-            setTimeout(function() {
-                const loadingScreen = document.getElementById("loadingScreen");
-                loadingScreen.style.opacity = 0;
-                setTimeout(function() {
-                    loadingScreen.style.display = "none";
-                }, 1000); 
-            }, 2000); 
-        });
-
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-WLTG1S4STB');
     </script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="/js/loading.js"></script>
 </body>
 </html>
