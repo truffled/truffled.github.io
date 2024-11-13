@@ -20,7 +20,7 @@ body {
     background-color: #0d0d0d;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack content vertically */
     justify-content: center;
     align-items: center;
     z-index: 9998;
@@ -65,7 +65,7 @@ body {
 }
 
 #fetching-text {
-    margin-top: 10px;
+    margin-top: 20px; /* Adds space between the dots and text */
     font-size: 1rem;
     color: #ccc;
 }
