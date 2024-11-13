@@ -323,3 +323,22 @@ header p {
     background-color: #218838;
     transform: scale(1.05);
 }
+
+.cool-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.cool-link:hover {
+    color: #ff4500;
+    transform: scale(1.1);
+}
+
+.cool-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff4500;
+}
+
