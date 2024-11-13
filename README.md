@@ -6,6 +6,7 @@ Truffled is an online game site that enables one to play different interactive g
 
 - 10+ Apps
 - 30+ Games
-Smoothening of games & proxy
 
 ## love ya <3
+
+# https://truffled-games.web.app
