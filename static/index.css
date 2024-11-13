@@ -6,9 +6,7 @@
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: #000000; 
-    color: #ffffff;
-    overflow-x: hidden;
+    background-color: #000000
 }
 
 .navbar {
@@ -76,7 +74,6 @@ h1 {
     color: #e0e0e0;
     margin-bottom: 20px;
 }
-
 
 p {
     font-size: 1.2rem;
