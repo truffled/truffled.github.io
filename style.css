@@ -20,27 +20,27 @@ body {
     background-color: #0d0d0d;
     color: white;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 9998;
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
 }
 
 .dots {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    gap: 10px;
 }
 
 .dot {
     width: 15px;
     height: 15px;
-    margin: 0 5px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
-    animation: bounce 0.6s infinite alternate;
+    animation: bounce 0.6s ease-in-out infinite;
 }
 
 .dot:nth-child(1) {
@@ -56,18 +56,19 @@ body {
 }
 
 @keyframes bounce {
-    0% {
+    0%, 100% {
         transform: translateY(0);
     }
-    100% {
+    50% {
         transform: translateY(-20px);
     }
 }
 
-#fetching-text {
-    margin-top: 20px; /* Adds space between the dots and text */
-    font-size: 1rem;
+#loading-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
     color: #ccc;
+    text-align: center;
 }
 
 .navbar {
