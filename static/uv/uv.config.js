@@ -9,3 +9,4 @@ self.__uv$config = {
     sw: '/static/uv/uv.sw.js',
 };
 // https://freediddyandrkelly.home.kg/bare/
+// https://static.99.135.156.178.clients.your-server.de/bare/
