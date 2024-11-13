@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="ball" id="ball1"></div>
+            <div class="ball" id="ball2"></div>
+            <div class="ball" id="ball3"></div>
+        </div>
+        <p class="loading-text">Loading...</p>
+    </div>
     <div class="navbar">
         <div class="navbar-left">
             <img src="png/logo.svg" alt="Truffled Logo" class="logo">
@@ -33,6 +41,16 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
     <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                const loadingScreen = document.getElementById("loadingScreen");
+                loadingScreen.style.opacity = 0;
+                setTimeout(function() {
+                    loadingScreen.style.display = "none";
+                }, 1000); 
+            }, 2000); 
+        });
+
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
