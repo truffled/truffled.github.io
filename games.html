@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,31 +29,32 @@
             <a href="settings.html"><img src="png/gear-solid.svg" alt="Settings"></a>
         </div>
     </div>
+<div class="content">
+    <h1>Games</h1>
+    <p>Choose a game to start playing!</p>
+    <div class="index-page">
+        <input type="text" id="gamesearch" class="search-bar" placeholder="Search..." />
 
-    <div class="content">
-        <h1>Games</h1>
-        <p>Choose a game to start playing!</p>
-
-        <div class="container">
-            <div class="game-gallery" id="gameGallery">
-                <div class="game" data-name="Game 1">
-                    <a href="https://forms.gle/azBWo53JQN8VNzFt5" class="game-link">
-                        <img src="/png/games/forms.png" alt="1" class="game-thumbnail">
-                    </a>
-                    <h3>Game Suggestions</h3>
-                </div>
-                <div class="game" data-name="Game 1">
-                    <a href="games/1" class="game-link">
-                        <img src="png/games/12.png" alt="1" class="game-thumbnail">
-                    </a>
-                    <h3>1</h3>
-                </div>
-                <div class="game" data-name="gameGallery">
-                    <a href="games/1v1lol" class="game-link">
-                        <img src="png/games/1v1.png" alt="1v1" class="game-thumbnail">
-                    </a>
-                    <h3>1v1.lol</h3>
-                </div>
+    <div class="container">
+        <div class="game-gallery" id="gameGallery">
+            <div class="game" data-name="Game Suggestions">
+                <a href="https://forms.gle/azBWo53JQN8VNzFt5" class="game-link">
+                    <img src="/png/games/forms.png" alt="Game Suggestions" class="game-thumbnail">
+                </a>
+                <h3>Game Suggestions</h3>
+            </div>
+            <div class="game" data-name="Game 1">
+                <a href="games/1" class="game-link">
+                    <img src="png/games/12.png" alt="Game 1" class="game-thumbnail">
+                </a>
+                <h3>1</h3>
+            </div>
+            <div class="game" data-name="1v1.lol">
+                <a href="games/1v1lol" class="game-link">
+                    <img src="png/games/1v1.png" alt="1v1.lol" class="game-thumbnail">
+                </a>
+                <h3>1v1.lol</h3>
+            </div>
                 <div class="game" data-name="gameGallery">
                     <a href="games/2048" class="game-link">
                         <img src="png/games/2048.png" alt="2048" class="game-thumbnail">
@@ -293,6 +293,38 @@
         </div>
     </div>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+function searchGames() {
+var txt = $("#gamesearch").val();
+if (txt === "") {
+    $(".game").show(); 
+} else {
+    $(".game").hide(); 
+    $(".game").each(function () {
+        if ($(this).text().toUpperCase().indexOf(txt.toUpperCase()) !== -1 || $(this).data('id') === parseInt(txt)) {
+            $(this).show(); 
+        }
+    });
+}
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+let urlParams = new URLSearchParams(window.location.search);
+let q = urlParams.get("q");
+if (q) {
+    document.getElementById("gamesearch").value = q;
+    searchGames();
+    urlParams.delete("q");
+    window.history.replaceState({}, document.title, location.pathname);
+}
+document.getElementById("gamesearch").addEventListener("input", () => {
+    searchGames();  
+});
+});
+
+</script>
+</body>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -301,5 +333,6 @@
   gtag('config', 'G-WLTG1S4STB');
 </script>
 <script src="/loading.js"></script>
+<script src="/starGame.js"></script>
 </body>
 </html>
