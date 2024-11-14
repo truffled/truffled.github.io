@@ -4,5 +4,5 @@ window.onload = function() {
     loadingScreen.style.opacity = '0';
     setTimeout(() => {
         loadingScreen.style.display = 'none';
-    }, 2000);
+    }, 1000);
 };

@@ -138,27 +138,42 @@ h1 {
 }
 
 .search-bar {
-    padding: 8px 15px;
-    width: 300px;
+    padding: 10px 20px;
+    width: 450px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     border: none;
     outline: none;
     background-color: #333333;
     color: #ffffff;
     text-align: center;
-    transition: width 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    transition: width 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.search-bar:focus {
+    width: 470px;
+    background-color: #444444;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .search-bar:hover {
-    width: 320px;
+    width: 470px;
     background-color: #444444;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+.search-bar::placeholder {
+    color: #aaaaaa;
+    font-style: italic;
 }
 
 p {
     font-size: 1.2rem;
     color: #b3b3b3;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -169,7 +184,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    margin: 15px;
+    margin: 5px;
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -188,7 +203,7 @@ button:hover {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    margin: 15px;
+    margin: 5px;
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -221,18 +236,20 @@ header p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .game {
     background-color: #1e1e1e;
     border-radius: 10px;
+    border: 2px solid #484848;
     padding: 20px;
     width: 250px;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
+
 
 .game:hover {
     transform: scale(1.05);
@@ -341,4 +358,3 @@ header p {
     outline: none;
     box-shadow: 0 0 5px #ff4500;
 }
-
