@@ -70,7 +70,6 @@ body {
     color: #ccc;
     text-align: center;
 }
-
 .navbar {
     display: flex;
     align-items: center;
@@ -341,6 +340,7 @@ header p {
     transform: scale(1.05);
 }
 
+
 .cool-link {
     text-decoration: none;
     color: #007bff;
@@ -358,3 +358,4 @@ header p {
     outline: none;
     box-shadow: 0 0 5px #ff4500;
 }
+
