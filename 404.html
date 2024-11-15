@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>404!</title>
-  </head>
-  <body>
-  <div class="content">
-    <h1>404</h1>
-    <p>either this page doesnt work or you typed in a wrong link</p>
-    <button class="sigma" onclick="window.location.href='/'">Home</button>
-  </div>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-WLTG1S4STB');
-  </script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="png/logo.png"/>
+    <title>404</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="/png/logo.svg" alt="Truffled Logo" class="logo">
+            <span class="logo-text">Truffled</span>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Wrong Link?</h1>
+        <p>If you're using the proxy, click below</p>
+        <div class="theme-toggle">
+            <button class="button" onclick="window.location.href='/'">Home</button>
+            <button onclick="location.reload();">Refresh</button>
+        </div>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WLTG1S4STB');
+    </script>
+    <script src="script.js"></script>
+</body>
 </html>
