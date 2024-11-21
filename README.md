@@ -17,7 +17,7 @@ use any static hosting provider or click a button below!! <br>
 
 * [TIW](https://github.com/KwazyMotoo/TIW-Static) - static proxy code
 * [3kh0](https://gitlab.com/3kh0/3kh0-assets) - game files
-* [Selenite](https://gitlab.com/skysthelimit.dev/selenite) - more game files
+* [Selenite](https://gitlab.com/skysthelimit.dev/selenite) - more game files and bookmarklets
 
 ## Acknowledgments
 
