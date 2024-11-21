@@ -28,12 +28,16 @@
             <a href="apps.html"><img src="png/apps.svg" alt="Apps"></a>
             <a href="other.html"><img src="png/other.svg" alt="Other"></a>
             <a href="settings.html"><img src="png/gear-solid.svg" alt="Settings"></a>
-            
         </div>
     </div>
 
     <div class="content">
-        <h1>Nothing Much :3 </h1>
+        <div id="panicKeySettings">
+            <h1>Panic Key Settings</h1>
+            <p id="currentPanicKey">Current Panic Key: ~</p>
+            <p id="instruction"></p>
+            <button onclick="changePanicKey()">Change Panic Key</button>
+        </div>
     </div>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
@@ -43,6 +47,7 @@
         gtag('js', new Date());
         gtag('config', 'G-WLTG1S4STB');
     </script>
+    <script src="/js/panic.js"></script>
     <script src="/loading.js"></script>
 </body>
 </html>
