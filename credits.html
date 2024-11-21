@@ -33,22 +33,38 @@
 
     <div class="content">
         <h1>Credits</h1>
-        <p>Check these people out ❤️</p>
+        <p>Click on a profile picture to see their contributions!</p>
 
-        <h2>Echo - Games</h2>
-        <h2>Brunys - Loading screen & Help with firebase & Games & Buttons.</h2>
-        <h2>Szvy - Images & Games.</h2>
-        <h2>Reesadle - Games.</h2>
+        <div class="contributors">
+            <div class="pfp" onclick="showContributions('echo')">
+                <img src="png/partner/echo.gif" alt="Echo" class="profile-img">
+            </div>
+            <div class="pfp" onclick="showContributions('brunys')">
+                <img src="/png/partner/brunys.png" alt="Brunys" class="profile-img">
+            </div>
+            <div class="pfp" onclick="showContributions('szvy')">
+                <img src="/png/partner/szvyc.png" alt="Szvy" class="profile-img">
+            </div>
+            <div class="pfp" onclick="showContributions('reesadle')">
+                <img src="/png/partner/reese.png" alt="Reesadle" class="profile-img">
+            </div>
+        </div>
 
+        <div id="contribution-details" class="contribution-details">
+            <h2 id="contribution-name">Echo</h2>
+            <p id="contribution-text">Games</p>
+        </div>
+    </div>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLTG1S4STB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-WLTG1S4STB');
-</script>
-<script src="/loading.js"></script>
+      gtag('config', 'G-WLTG1S4STB');
+    </script>
+    <script src="/loading.js"></script>
+    <script src="/js/credit.js"></script>
 </body>
 </html>
