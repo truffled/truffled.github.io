@@ -9,6 +9,9 @@ body {
     background-color: #000000;
     color: #ffffff;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #loading-screen {
@@ -154,7 +157,6 @@ body {
     padding: 15px 25px;
     width: 200px;
 }
-
 
 .navbar {
     display: flex;
@@ -445,3 +447,99 @@ header p {
     box-shadow: 0 0 5px #ff4500;
 }
 
+.contributors {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.pfp {
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #979797;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.contribution-details {
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contribution-details h2 {
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+
+.contribution-details p {
+    font-size: 1.5rem;
+    color: #b3b3b3;
+}
+
+#panicKeySettings {
+    background-color: #1b1b1b;
+    border: 3px solid #979797;
+    border-radius: 8px;
+    padding: 30px 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  #panicKeySettings h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #0077b6;
+  }
+  
+  #currentPanicKey {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  #instruction {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    #panicKeySettings {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    #panicKeySettings h2 {
+      font-size: 20px;
+    }
+  
+    #currentPanicKey {
+      font-size: 16px;
+    }
+  
+    #instruction {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
+  
